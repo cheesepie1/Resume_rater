@@ -2,9 +2,12 @@ import os
 import sys
 from utils.model_loader import ModelLoader
 from logger.custom_logger import CustomLogger
-from exception.custom_exception import ResumeanalyserException
+from exception.custom_exception import ResumeAnalysisException
+
 from model.models import *
-from langchain_core.output_parsers import JsonOutputParser, OutputFixingParser
+from langchain_core.output_parsers import JsonOutputParser
+
+
 from prompt.prompt_library import PROMPT_REGISTRY
 from utils import job_loader
 
@@ -22,8 +25,6 @@ class ResumeAnalyzer:
             # structure the output into resumeRater
             self.parser = JsonOutputParser(pydantic_object=ResumeRater)
 
-            # adjust the output if it is not good match to ResumeRater.
-            self.fixing_parser = OutputFixingParser.from_llm(parser=self.parser, llm=self.llm)
             
             # avoid hard coding, making prompt reusable
             self.prompt = PROMPT_REGISTRY["resume_analysis"]
@@ -33,12 +34,12 @@ class ResumeAnalyzer:
             
         except Exception as e:
             self.log.error(f"Error initializing Resume Analyzer: {e}")
-            raise ResumeanalyserException("Error in Resume Analyzer initialization", sys)
+            raise ResumeAnalysisException("Error in Resume Analyzer initialization", sys)
     
     def analyze_resume(self, resume_text:str,job_description:str)-> dict:
         
         try:
-            
+            # If given url, then extract job_description from it      
             url=self.jobdescriptor.url_extractor(job_description)
             if url is not None:
                 self.log.info(f"Url Extracted: {url}")
@@ -49,7 +50,7 @@ class ResumeAnalyzer:
                 self.log.info(f"No URL was extracted")
            
             ## buidling langchain pipeline
-            chain = self.prompt | self.llm | self.fixing_parser
+            chain = self.prompt | self.llm | self.parser
             
             self.log.info("Meta-data analysis chain initialized")
             self.log.info(f"Resume text length: {len(resume_text)}")
@@ -84,6 +85,6 @@ class ResumeAnalyzer:
             self.log.error(f"Exception type: {type(e)}")
             import traceback
             self.log.error(f"Traceback: {traceback.format_exc()}")
-            raise ResumeanalyserException("Metadata extraction failed",sys)
+            raise ResumeAnalysisException("Metadata extraction failed",sys)
 
             

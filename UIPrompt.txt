@@ -1,0 +1,129 @@
+Go through the whole code-base thoroughly first.
+
+Goal: Build a modern, dark-themed, responsive Resume Analyzer UI similar to an AI resume analysis dashboard.
+This task is front-end only — do not modify or connect to backend logic.
+
+Requirements:
+
+Do not touch backend — focus purely on HTML, CSS, and JS for UI/UX.
+
+Create (or update) these files:
+
+index.html
+
+style.css
+
+script.js
+
+General Style & Layout:
+
+Use a dark theme (navy / midnight background) with purple-blue accents.
+
+Modern, minimal, professional look (rounded cards, subtle shadows, animations).
+
+Use Google Fonts like Poppins or Inter.
+
+All sections should be centered and responsive (flex or grid layout).
+
+Page Sections
+1. Header
+
+App Title: Resume Scorer
+
+Subtitle: “AI-Powered Resume Analysis & Job Matching”
+
+Right-aligned buttons for Dark/Light Mode toggle and Help (?).[Help can have some basic knowledge about using the application]
+
+2. Upload Section (Initial View)
+
+A card or section titled “Upload Your Resume” with description text:
+
+“Upload your resume and job description to get detailed analysis.”
+
+Elements:
+
+Drag-and-drop area or Upload button (Choose Resume PDF)
+
+File name display after upload
+
+Text area or card for Job Description input
+
+Analyze Resume button (large, gradient-styled)
+
+3. Analysis Section (Visible after clicking Analyze)
+
+Hidden by default; revealed when user clicks “Analyze Resume.”
+
+Components:
+
+Overall Score Card
+
+Circular badge showing numeric score (e.g., “65”)
+
+Title: “Resume Analysis Summary”
+
+Description paragraph summarizing candidate fit.
+
+Skills Analysis Card
+
+Radar or bar chart of skills match (using Chart.js).
+
+Experience Match Card
+
+Bar and donut chart visuals etc.
+
+Education Fit Card
+
+Two-bar comparison (degree level, field of study).
+
+Job Compliance Card
+
+Stacked bar or radar chart summarizing compliance categories.
+
+Additional Strengths Card
+
+Title: “Additional Strengths”
+
+List key positive points or tags (like soft skills, adaptability, etc.)
+
+Areas of Improvement Card
+
+Title: “Areas of Improvement”
+
+List specific gaps or suggestions.
+
+4. New Analysis Button
+
+A large button at the end labeled “Start New Analysis”.
+
+When clicked:
+
+Hide all result sections.
+
+Reset the page to show only the upload section (resume upload, job description, analyze button).
+
+ Technical Notes
+
+Use Chart.js for visualizations.
+
+Use vanilla JavaScript for interactivity (no frameworks).
+
+Add smooth fade-in/out animations when switching between views.
+
+Include all CSS in style.css (no inline styles).
+
+Maintain semantic, well-structured HTML with descriptive class names.
+
+Keep everything mobile-friendly with responsive layouts.
+
+Optional: Add a simple light/dark mode toggle (CSS-based).
+
+
+End Goal:
+A clean, modern, front-end–only Resume Analyzer interface with:
+
+Upload + Analyze (initial view)
+
+Results dashboard with charts, strengths, and improvements
+
+“New Analysis” reset button returning to initial state

@@ -12,7 +12,7 @@ from src.resume_rater.data_analisis import ResumeAnalyzer
 from logger.custom_logger import CustomLogger
 log = CustomLogger().get_logger(__name__)
 
-app = FastAPI(title="Resume Scorer", version="0.1")
+app = FastAPI(title="Resume Rater", version="0.1")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
@@ -39,8 +39,8 @@ def health() -> Dict[str, str]:
     log.info("Health check passed.")
     return {"status": "ok", "service": "Resume-Scorer"}
 
-@app.post("/scorer")
-async def score_resume(resume: UploadFile = File(...), job_description: str = Form(...)) -> Any:
+@app.post("/rater")
+async def rate_resume(resume: UploadFile = File(...), job_description: str = Form(...)) -> Any:
     try:
         log.info(f"Starting resume analysis - File: {resume.filename}, Job description length: {len(job_description)}")
         
@@ -72,4 +72,4 @@ async def score_resume(resume: UploadFile = File(...), job_description: str = Fo
         log.exception("Resume scoring failed")
         raise HTTPException(status_code=500, detail=f"Resume scoring failed: {e}")
 
-#uvicorn api.main:app --host 0.0.0.0 --port 80880
+#uvicorn api.main:app --host 0.0.0.0 --port 8080

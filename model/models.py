@@ -11,4 +11,11 @@ class ResumeRater(BaseModel):
     job_compliance:dict
     additional_points:List[str]
     improvements:List[str]
+
+class JobDescription(BaseModel):
+    title: str
+    company: str
+    location: str
+    description: List[str]
+    requirements: List[str]
    
