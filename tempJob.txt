@@ -1,56 +1,77 @@
 About the job
-Join us in reshaping manufacturing with advanced tech like computer vision and AI!
+Odoo is a global leader in open-source business management software, offering a full suite of integrated applications including ERP, CRM, accounting, HR, payroll, e-commerce, analytics and business intelligence. With more than 12 million users worldwide, Odoo delivers modular, scalable and user-friendly business solutions adapted to local and international markets.
+Odoo’s APAC technical teams specialise in software development, system customisation, and regional localisation projects, particularly for the Australian market. We work in an agile environment focused on innovation, code quality, and delivering high-impact business software.
 
-As a Senior/Staff Robotics Engineer (m/f/d), you will be integral in driving our company's next phase of innovation - automating industrial processes to address the scarcity of skilled labor. We have already proven our ability to optimize processes and increase efficiency, and now we are determined to automate tasks within industrial environments. Your main focus will be on R&D and will involve building and showcasing a demonstrator that utilizes industrial robot arms to automate currently manual tasks.
 
-You have a strong background in state of the art in robotic manipulation, extensive experience in modeling, planning, and controlling robotic systems, as well as applying machine learning techniques to enhance robotic manipulation capabilities.
+The Developer Programmer is responsible for designing, coding, testing, and maintaining Odoo ERP modules and applications. This role contributes to localisation projects, system enhancements, client-specific customisations, internal tool improvements, and integrations.
+The work involves analysing user needs, interpreting technical specifications, and producing high-quality software solutions within Odoo’s technical framework.
 
-Your role
 
-Lead R&D efforts to prototype a new robotic manipulator, conducting rigorous testing to validate design specifications and performance criteria.
-Work with industry-standard hardware platforms (e.g., ROS-compatible robots, specific sensor suites) to develop and deploy robotic manipulators for real world testing. 
-Develop and implement models for hybrid dynamical systems exhibiting both continuous and discrete dynamic behaviors, specifically in robotic manipulators.
-Design advanced planning algorithms to optimize manipulation tasks such as pick-and-place operations.
-Experience with supervised learning, unsupervised learning, and reinforcement learning techniques to improve manipulation performance in robots.
-Previously trained RL models in both simulated and real-world environments with continuous action and state spaces.
-Design and develop middleware and software solutions tailored for robotic manipulation applications.
-Optimize software architecture for efficient communication between sensors, processors, and actuators in robotic manipulators.
-Develop perception algorithms for object pose estimation, matching, and instance segmentation to aid in manipulation tasks.
-Utilize deep learning techniques for end-to-end and self-supervised grasping, enhancing the robot's autonomous manipulation capabilities.
-Experience with integration between hardware components, including tactile sensors, force sensors, vision systems (e.g., RGB-D cameras), and depth sensors to optimize communication protocols and data flow for efficient robotic operations.
+ Duties & Responsibilities
 
-Your profile
 
-Ph.D. in Robotics, Mechanical Engineering, Electrical Engineering, Computer Science, or related field, with a strong emphasis on robotics.
-Minimum of 1-2 years of experience in robotics research or development.
-Proven experience in modeling, planning, and controlling hybrid dynamical systems for robotic manipulation.
-Hands-on experience with machine learning techniques applied to robotic manipulation tasks.
-Experience with robotic perception technologies and deep learning frameworks as applied to manipulation.
-Strong programming skills in C++, Python, and familiarity with ROS (Robot Operating System).
-Experience with simulation tools such as Nvidia Isaac SIM, Gazebo, V-REP, CUDA for robotic manipulation.
-Proficiency with machine learning libraries like TensorFlow or PyTorch.
-Fluency in English is mandatory.
+Software Development & Programming
+Analyse user requirements and convert them into technical specifications for ERP features and modules.
+Develop, modify and maintain Odoo applications using Python, JavaScript, XML, and PostgreSQL.
+Build new modules, extend existing functionality, and ensure compatibility with Odoo’s framework.
 
-What We Offer
 
-A competitive salary & stock options
+Application Localisation & R&D
+Contribute to APAC and Australian localisation, including Payroll, Single Touch Payroll (STP), tax rules and HR compliance features.
+Participate in research & development initiatives to enhance the global Odoo codebase.
+Develop features to support region-specific functional, legal and reporting requirements.
 
-The option to work in a brand new office situated on the AI Campus in Berlin where we closely cooperate with other exciting AI ventures
 
-Be on the forefront in defining what artificial intelligence means in manufacturing
+Testing & Quality Assurance
+Conduct unit testing, regression testing, debugging and performance optimisation.
+Assist in improving automated CI/CD workflows and development tools.
+Prepare technical documentation, test scripts and code review reports.
 
-Gain hands-on experience in working in an AI-first software company
 
-Supportive and inclusive culture that values diversity and promotes the advancement of underrepresented groups within the company
+System Analysis & Problem Resolution
+Analyse client issues, technical defects, workflow gaps and system performance bottlenecks.
+Recommend and implement scalable solutions, patches, and enhancements to improve reliability.
+Assist in troubleshooting configuration issues and integration challenges.
 
-Collaborate with a diverse (currently more than 10 nationalities) and talented team, working on cutting-edge projects with real-world impact
 
-Network with professionals and leaders in the field, opening doors to potential future career opportunities
+Integration & Data Operations
+Develop and maintain API integrations between Odoo and external systems.
+Work with data modelling, data migration, ETL and schema design in Odoo’s PostgreSQL backend.
 
-We have a very flat hierarchy, open 360° feedback, and flexible working hours
 
-Ethics⚖: We are committed to developing ethical AI software
+Collaboration & Support
+Work with functional consultants, product teams, and global engineering teams.
+Provide mentoring and technical guidance to junior developers.
+Support internal teams during product deployment, testing cycles and localisation rollouts.
 
-Don't meet all the requirements?
 
-Deltia is committed to creating a workplace that is diverse, fair, and inclusive. We encourage candidates from all backgrounds, even if they do not meet every qualification, to submit their application. We firmly believe that having a team with diverse perspectives only strengthens our company and drives innovation. Our commitment also extends to providing an accessible environment for everyone, including those with disabilities. Please let us know if you require any accommodations during the application process or while working with us, and we will do our best to support you.
+4. Skills & Qualifications Required
+
+
+
+Academic Requirements
+Bachelor degree in Computer Science, Software Engineering, Information Systems or equivalent.
+
+
+Technical Skills
+Strong proficiency in Python and JavaScript (mandatory).
+Experience with PostgreSQL, Odoo ORM, and relational database structures.
+Familiarity with software engineering principles, SDLC, and agile methodologies.
+Experience developing and testing ERP modules or enterprise-scale applications.
+Understanding of CI/CD, Git, and automated testing frameworks.
+Exposure to cloud environments (AWS, Azure) considered an advantage.
+Experience with machine learning frameworks (PyTorch, TensorFlow) beneficial but optional.
+
+
+Professional Skills
+Ability to analyse technical requirements and develop scalable solutions.
+Strong debugging, problem-solving and optimisation skills.
+Ability to produce clear technical documentation.
+Strong communication skills for technical collaboration and client support.
+
+
+Soft Skills
+Ability to work independently and collaboratively.
+Proactive learner with ability to adapt to new technologies.
+Strong mentoring and teamwork capabilities.
+
